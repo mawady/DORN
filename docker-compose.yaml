@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  caffe:
+    build:
+      dockerfile: caffe-cpu.Dockerfile
+      # dockerfile: caffe-gpu.Dockerfile
+    container_name: "${COMPOSE_PROJECT_NAME}"
+    volumes:
+      - ./results:/opt/result
+    stdin_open: true 
+    tty: true

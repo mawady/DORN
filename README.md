@@ -1,5 +1,15 @@
 # DORN: Deep Ordinal Regression Network for Monocular Depth Estimation
 
+## Notes from [Mohamed Elawady](https://github.com/mawady)
+- [Done] Build docker-compose workflow to run code in CPU
+- [In-Progress] Build docker-compose workflow to run code in GPU
+
+Updated files:
+- demo_kitti.py
+- demo_nyuv2.py
+- caffe/include/caffe/util/interp.hpp
+
+---
 ### Paper
 
 #### [H. Fu, M. Gong, C. Wang, K. Batmanghelich and D. Tao: Deep Ordinal Regression Network for Monocular Depth Estimation. IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2018.](https://arxiv.org/abs/1806.02446)

@@ -10,8 +10,9 @@ parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFo
 parser.add_argument('--filename', type=str, default='./data/NYUV2/demo_01.png', help='path to an image')
 parser.add_argument('--outputroot', type=str, default='./result/NYUV2', help='output path')
 
-caffe.set_mode_gpu()
-caffe.set_device(0)
+# caffe.set_mode_gpu()
+# caffe.set_device(0)
+caffe.set_mode_cpu()
 net = caffe.Net('models/NYUV2/deploy.prototxt', 'models/NYUV2/cvpr_nyuv2.caffemodel', caffe.TEST)
 pixel_means = np.array([[[103.0626, 115.9029, 123.1516]]])
 
